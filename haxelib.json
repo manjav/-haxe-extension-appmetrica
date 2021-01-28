@@ -1,0 +1,12 @@
+{
+  "name": "extension-appmetrica",
+  "url": "",
+  "license": "MIT",
+  "tags": ["android","games","openfl","appmetrica","mobmetrica","attributions", "yandex"],
+  "description": "",
+  "version": "1.0.0",
+  "releasenote": "",
+  "contributors": ["manjav"],
+  "dependencies": {
+  }
+}
