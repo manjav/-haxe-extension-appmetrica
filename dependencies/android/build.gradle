@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+	dependencies {
+		classpath 'com.android.tools.build:gradle:::ANDROID_GRADLE_PLUGIN::'
+	}
+}
+
+apply plugin: 'com.android.library'
+
+android {
+	compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+	buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+}
+
+dependencies {
+    implementation 'com.yandex.android:mobmetricalib:3.18.0'
+    implementation 'com.android.installreferrer:installreferrer:1.1.2'
+    implementation project(':deps:extension-api')
+}
