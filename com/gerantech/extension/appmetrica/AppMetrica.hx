@@ -3,10 +3,7 @@ package com.gerantech.extension.appmetrica;
 class AppMetrica {
 	///callbacks haxe
 	// public static var onInit:Bool->String->Void = null;
-	// public static var onAdReady:String->Void = null;
-	// public static var onAdStart:String->Void = null;
-	// public static var onAdFinish:String->String->Void = null;
-	// public static var onAdError:String->String->Void = null;
+
 
 	private static var _instance:AppMetrica = null;
 
@@ -41,14 +38,5 @@ class AppMetrica {
 	public function listen(type:String, arg0:Dynamic, arg1:Dynamic):Void {
 		if (type == "init" && onInit != null)
 			onInit(arg0, arg1);
-		else if (type == "ready" && onAdReady != null) {
-			placements.set(arg0, true);
-			onAdReady(arg0);
-		} else if (type == "start" && onAdStart != null)
-			onAdStart(arg0);
-		else if (type == "finish" && onAdFinish != null)
-			onAdFinish(arg0, arg1);
-		else if (type == "error" && onAdError != null)
-			onAdError(arg0, arg1);
 	} */
 }
